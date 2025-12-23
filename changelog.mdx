@@ -1,0 +1,113 @@
+---
+title: Changelog
+description: Track the latest updates, improvements, and new features released in Documentation.AI.
+---
+
+## Recent Releases
+
+Stay informed about every update to Documentation.AI. You receive new features, performance enhancements, and critical bug fixes to keep your documentation dynamic and AI-powered.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added AI-powered search with semantic understanding for instant answers across your docs.
+- Introduced reusable component library with drag-and-drop editor for faster page creation.
+- Enabled real-time collaboration, allowing teams to edit docs simultaneously.
+
+## Improvements
+
+- Enhanced AI assistant with context-aware suggestions, reducing manual edits by `>50%`.
+- Optimized rendering performance for large documentation sites, achieving load times `<100ms`.
+
+## Bug Fixes
+
+- Fixed intermittent preview glitches in the MDX editor.
+- Resolved authentication token refresh issues during long sessions.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Launched version control with Git integration for seamless rollback and branching.
+- Added custom domain support for publishing docs at your subdomain.
+
+## Bug Fixes
+
+- Patched security vulnerability in webhook endpoints (CVE-2024-XXXX).
+- Corrected syntax highlighting errors for nested code blocks in MDX components.
+
+## Improvements
+
+- Upgraded Mermaid diagram rendering to support latest flowchart syntax.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## Initial Release
+
+- Core AI documentation generator from natural language prompts.
+- Full MDX component suite including `<Callout>`, `<Steps>`, and `<Tabs>`.
+- Integrated analytics dashboard to track doc usage and engagement.
+
+## Breaking Changes
+
+- Updated API authentication to use `{API_KEY}` header instead of query params.
+
+</Update>
+
+## Upcoming Roadmap
+
+<Columns cols={3}>
+  <Card title="AI Enhancements" icon="zap" href="#">
+    Advanced multi-language support and auto-translation for global teams.
+  </Card>
+  <Card title="Integrations" icon="link" href="#">
+    Native plugins for GitHub, Slack, and Jira to streamline workflows.
+  </Card>
+  <Card title="Analytics" icon="bar-chart-3" href="#">
+    Predictive insights on user queries and content gaps.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+  Subscribe to our RSS feed at `/rss.xml` or join the Discord community for beta access to upcoming features.
+</Callout>
+
+## How to Upgrade
+
+Follow these steps to ensure you run the latest version.
+
+<Steps>
+  <Step title="Check Current Version" icon="package">
+    Run `docs-ai --version` in your project directory.
+  </Step>
+  <Step title="Update Package" icon="download">
+````bash
+npm install docs-ai@latest
+````
+
+    Or use Yarn:
+````bash
+yarn upgrade docs-ai@latest
+````
+  </Step>
+  <Step title="Verify Changes" icon="check-circle">
+    Review the changelog and test your docs in preview mode.
+  </Step>
+</Steps>
+
+<Expandable title="Advanced Upgrade Options" default-open="false">
+
+For enterprise users, use the CLI flag for zero-downtime updates:
+
+````bash
+docs-ai upgrade --prod --backup
+````
+
+This creates a snapshot before applying changes.
+
+</Expandable>
